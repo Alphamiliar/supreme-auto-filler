@@ -1,97 +1,97 @@
-<html style="height: 300px; width: 500px">
+<html style="height: 300px; width: 300px">
     <head>
         <link rel="stylesheet" href="../libs/bootstrap-5.1.1-dist/css/bootstrap.min.css">
     </head>
 
-    <body style="height: 300px; width: 500px; background-color: F8F8F8;">
+    <body style="height: 300px; width: 300px; background-color: F8F8F8;">
         <header style="background-color:white; overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 1;">
-            <h3 class="float-md-start mb-0" style="text-align: center; margin: 20px;">YasAutoFiller</h3>
+            <h3 class="float-md-start mb-0" style="text-align: center; margin: 20px;">Doc Server Assistant</h3>
         </header>
             
         <div style="margin-top: 50px; margin-left: 10px; margin-right: 10px;">
-            <!-- Buttons -->
-            <div style="text-align: center; margin-top: 70px; margin-bottom:10px">
-                <!-- Auto fill -->
-                <button class="btn btn-primary" id="auto-fill">Auto Fill</button>
-
-                <!-- Reset fields -->
-                <button class="btn btn-primary" id="reset-fields">Reset Fields</button>
-
-                <!-- Save fields -->
-                <button class="btn btn-primary" id="save">Save</button>
-
-                <!-- Load fields -->
-                <button class="btn btn-primary" id="load">Load</button>
-                <script src="script.js"></script>
-            </div>
 
             <!-- Input fields -->
 
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-1">
+                <h5 class="float-md-start mb-0" style="margin-top: 10px">User Information</h5>
+            </div>
+
+            <div class="input-group input-group-sm mb-1">
                 <span class="input-group-text" id="inputGroup-sizing-sm">First Name</span>
                 <input type="text" id="firstname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-
+            </div>
+            
+            <div class="input-group input-group-sm mb-1">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Last Name</span>
                 <input type="text" id="lastname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
 
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-1">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
                 <input type="text" id="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
             
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-1">
                 <span class="input-group-text" id="inputGroup-sizing-sm">User Code</span>
                 <input type="text" id="usercode" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
 
-            <div class="input-group input-group-sm mb-3">
-                <label for="cars" class="input-group-text" id="inputGroup-sizing-sm">Choose a car:</label>
-                    <select class="input-group-text" id="inputGroup-sizing-sm">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option> 
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
+            <div class="input-group input-group-sm mb-1">
+                <h5 class="float-md-start mb-0" style="margin-top: 10px">Printer Info</h5>
+            </div>
+
+            <div class="input-group input-group-sm mb-1">
+
+                <span class="input-group-text" id="inputGroup-sizing-sm">Printer IP</span>
+                <input type="text" id="printer-ip" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+             
+            <div class="input-group input-group-sm mb-1">
+                <label for="cars" class="input-group-text" id="inputGroup-sizing-sm">Name Scheme</label>
+                    <select class="form-select-sm" id="inputGroup-sizing-sm">
+                        <option value="first-last">First Last</option>
+                        <option value="first-l">First L</option> 
+                        <option value="last-first">Last, First</option>
+                        <option value="last-f">Last, F</option>
                     </select>
             </div>
 
-            <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Address 2</span>
-                <input type="text" id="address2" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <div class="input-group input-group-sm mb-1">
+
+                <label for="cars" class="input-group-text" id="inputGroup-sizing-sm">Print Limit</label>
+                    <select class="form-select-sm" id="inputGroup-sizing-sm">
+                        <option value="first-last">Off</option>
+                        <option value="first-l">On</option> 
+                    </select>
+
+                <span class="input-group-text  ms-2" id="inputGroup-sizing-sm">Limit Value</span>
+                <input type="text" id="printer-ip" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
             </div>
 
-            <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Address 3</span>
-                <input type="text" id="address3" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <div class="input-group input-group-sm mb-1">
+                <h6 class="float-md-start mb-0" style="margin-top: 10px">Save/Load</h6>
             </div>
 
-            <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">City</span>
+            <!-- Buttons -->
+            <div class="mb-1" style="text-align: center;">
+                <!-- Auto fill -->
+                <button class="btn btn-secondary btn-sm" id="auto-fill">Submit</button>
+
+                <!-- Save fields -->
+                <button class="btn btn-primary btn-sm" id="save">Save Preset</button>
+
+                <!-- Delete fields -->
+                <button class="btn btn-primary btn-sm" id="load">Delete Preset</button>
+                <script src="script.js"></script>
+            </div>
+
+            <div class="input-group input-group-sm mb-1">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Printer Description (Optional)</span>
                 <input type="text" id="city" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-
-                <span class="input-group-text" id="inputGroup-sizing-sm">Postcode</span>
-                <input type="text" id="postcode" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
 
-            <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Card Number</span>
-                <input type="text" id="card-number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            </div>
-
-            <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Expiry Month</span>
-                <input type="text" id="month" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-
-                <span class="input-group-text" id="inputGroup-sizing-sm">Expiry Year</span>
-                <input type="text" id="year" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            </div>
-
-            <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">CVV</span>
-                <input type="text" id="cvv" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            </div>
-
-        <div style="margin: 10px; color: white">
+        <div style="margin: 2px; color: white">
             <br>
         </div>
 
