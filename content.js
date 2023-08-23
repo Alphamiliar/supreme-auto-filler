@@ -1,6 +1,8 @@
 chrome.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
-        try {
+    function(request, sender, sendResponse) 
+    {
+        try 
+        {
             document.getElementById("order_billing_name").value = request.name;
             document.getElementById("order_email").value = request.email;
             document.getElementById("order_tel").value = request.telephone;
@@ -14,7 +16,10 @@ chrome.runtime.onMessage.addListener(
             document.getElementById('credit_card_year').value = request.year;
             document.getElementById("credit_card_verification_value").value = request.cvv; 
             sendResponse({status: "Success!"});
-        } catch (error) {
+        } 
+        
+        catch (error) 
+        {
             console.log(error)
             sendResponse({status: "Exception occurred!"});
         }

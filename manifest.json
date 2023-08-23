@@ -1,10 +1,7 @@
 {
-    "name": "YasAutoFiller (for Supreme)",
+    "name": "Document Server Assistant",
     "version": "1.0",
     "manifest_version": 3,
-    "background": {
-        "service_worker": "welcome/background.js"
-    },
     "action": {
         "default_popup": "ext/index.html"
     },

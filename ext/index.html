@@ -1,9 +1,9 @@
-<html style="height: 300px; width: 400px">
+<html style="height: 300px; width: 500px">
     <head>
         <link rel="stylesheet" href="../libs/bootstrap-5.1.1-dist/css/bootstrap.min.css">
     </head>
 
-    <body style="height: 300px; width: 400px; background-color: F8F8F8;">
+    <body style="height: 300px; width: 500px; background-color: F8F8F8;">
         <header style="background-color:white; overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 1;">
             <h3 class="float-md-start mb-0" style="text-align: center; margin: 20px;">YasAutoFiller</h3>
         </header>
@@ -26,24 +26,33 @@
             </div>
 
             <!-- Input fields -->
+
             <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
-                <input type="text" id="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <span class="input-group-text" id="inputGroup-sizing-sm">First Name</span>
+                <input type="text" id="firstname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
+                <span class="input-group-text" id="inputGroup-sizing-sm">Last Name</span>
+                <input type="text" id="lastname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
 
             <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
                 <input type="text" id="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
-
-            <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Telephone Number</span>
-                <input type="text" id="telephone" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            </div>
             
             <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Address 1</span>
-                <input type="text" id="address1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <span class="input-group-text" id="inputGroup-sizing-sm">User Code</span>
+                <input type="text" id="usercode" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <label for="cars" class="input-group-text" id="inputGroup-sizing-sm">Choose a car:</label>
+                    <select class="input-group-text" id="inputGroup-sizing-sm">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option> 
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
             </div>
 
             <div class="input-group input-group-sm mb-3">
