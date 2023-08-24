@@ -18,12 +18,12 @@
 
             <div class="input-group input-group-sm mb-1">
                 <span class="input-group-text" id="inputGroup-sizing-sm">First Name</span>
-                <input type="text" id="firstname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" id="first-name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
             
             <div class="input-group input-group-sm mb-1">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Last Name</span>
-                <input type="text" id="lastname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" id="last-name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
 
             <div class="input-group input-group-sm mb-1">
@@ -33,7 +33,7 @@
             
             <div class="input-group input-group-sm mb-1">
                 <span class="input-group-text" id="inputGroup-sizing-sm">User Code</span>
-                <input type="text" id="usercode" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" id="user-code" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
 
             <div class="input-group input-group-sm mb-1">
@@ -47,7 +47,7 @@
             </div>
              
             <div class="input-group input-group-sm mb-1">
-                <label for="cars" class="input-group-text" id="inputGroup-sizing-sm">Name Scheme</label>
+                <label for="display-name" class="input-group-text" id="inputGroup-sizing-sm">Display Name</label>
                     <select class="form-select-sm" id="inputGroup-sizing-sm">
                         <option value="first-last">First Last</option>
                         <option value="first-l">First L</option> 
@@ -58,14 +58,14 @@
 
             <div class="input-group input-group-sm mb-1">
 
-                <label for="cars" class="input-group-text" id="inputGroup-sizing-sm">Print Limit</label>
-                    <select class="form-select-sm" id="inputGroup-sizing-sm">
-                        <option value="first-last">Off</option>
-                        <option value="first-l">On</option> 
+                <label for="print-limit-toggle-options" class="input-group-text" id="inputGroup-sizing-sm">Print Limit</label>
+                    <select class="form-select-sm" id="print-limit-toggle-options">
+                        <option value="1">Off</option>
+                        <option value="2">On</option> 
                     </select>
 
                 <span class="input-group-text  ms-2" id="inputGroup-sizing-sm">Limit Value</span>
-                <input type="text" id="printer-ip" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input disabled type="text" id="print-limit-value" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
             </div>
 
@@ -76,21 +76,20 @@
             <!-- Buttons -->
             <div class="mb-1" style="text-align: center;">
                 <!-- Auto fill -->
-                <button class="btn btn-secondary btn-sm" id="auto-fill">Submit</button>
+                <button class="btn btn-secondary btn-sm" id="submit">Submit</button>
 
                 <!-- Save fields -->
                 <button class="btn btn-primary btn-sm" id="save">Save Preset</button>
 
                 <!-- Delete fields -->
-                <button class="btn btn-primary btn-sm" id="load">Delete Preset</button>
-                <script src="script.js"></script>
+                <button class="btn btn-primary btn-sm" id="delete">Delete Preset</button>
             </div>
 
             <div class="input-group input-group-sm mb-1">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Printer Description (Optional)</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm">Printer Description</span>
                 <input type="text" id="city" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
-
+            <script src="script.js"></script>
         <div style="margin: 2px; color: white">
             <br>
         </div>
